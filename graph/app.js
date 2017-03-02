@@ -36,10 +36,6 @@
         }
       });
 
-      $(window).resize(function () {
-        App.graph.resize($(window).height(), $(window).width())
-      });
-
       $("#charge").live('change', function() {
         App.graph.set('charge', $(this).val())
       })
@@ -219,7 +215,7 @@
       this.numEdges = 0
       this.numVertices = 0
       this.colors = d3.scale.category10().range()
-      this.colors[0] = 42DCA3
+      this.colors[0] = "#42DCA3"
       this.nodes = [] // the node with index 0 is fixed to the center and has a high charge
       this.links = []
       this.lcfStepsAndRepeats = []
@@ -340,7 +336,7 @@
       if(graph.currentVertexOffset == 0){
         circles.filter(function(d,i){return graph.currentVertex == i}).style("fill", graph.colors[2])
         circles.filter(function(d,i){return graph.currentVertex > i}).style("fill", graph.colors[0])
-        circles.filter(function(d,i){return graph.currentVertex < i}).style("fill","white")
+        circles.filter(function(d,i){return graph.currentVertex < i}).style("fill",graph.colors[1])
         graph.currentVertexOffset += (stepInstruction > 0 ? 1 : -1);
       }else if(graph.currentVertexOffset != stepInstruction){
         circles.filter(function(d,i){return graph.currentStep == i}).style("fill", graph.colors[1])

@@ -93,9 +93,9 @@
       <div class="about-section">
         <div class="row">
           <h2>About APEX</h2>
-          <div class="col-lg-13 col-lg-offset-1 text-left">
-            <div class="vin col-md-3">
-               <div id="chart"></div>
+          <div class="col-lg-12 col-lg-offset-0 text-left">
+            <div class="wow vin col-md-3">
+              <div id="chart"></div>
             </div>
             <div class="col-md-9">
               <p>Our mission at APEX Management Consulting is to focus on excellence and adding the highest value possible for you and your organization. We strive to unlock the highest value possible for you by targeted understanding of your unique issues, generating value adding strategic solutions for the structure and processes of your organization, and synergizing your most significant value creating resource, your passionated people. We strategically align your organizational resources, foster an institutionalized passion for your vision among your stakeholders, and create synergy for achieving your excellence in individual and organizational performance.</p>
@@ -194,11 +194,19 @@
 <!-- Theme JavaScript -->
 <script src="js/grayscale.js"></script>
 <script src="graph/jquery.min.js"></script>
-   <script src="graph/handlebars.min.js"></script>
-   <script src="graph/ember-1.0.0-pre.2.min.js"></script>
-   <script src="graph/d3.v3.min.js"></script>
-   <script type="text/javascript" src="graph/jquery.caret.1.02.min.js"></script>
-   <script type="text/javascript" src="graph/app.js"></script>
+<script src="graph/handlebars.min.js"></script>
+<script src="graph/ember-1.0.0-pre.2.min.js"></script>
+<script src="graph/d3.v3.min.js"></script>
+<script type="text/javascript" src="graph/jquery.caret.1.02.min.js"></script>
+<script type="text/javascript" src="graph/app.js"></script>
+<!-- Animations -->
+<script src="js/wow.min.js"></script>
+<script>
+new WOW().init();
+$(window).resize(function () {
+        $('chart').hide();
+    });
+</script>
 </body>
 
 </html>
