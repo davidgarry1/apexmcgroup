@@ -115,7 +115,7 @@
           App.graph.set('freezeFrameAt', App.graph.get('prevFrame'))
       },
       nextFrame: function() {
-        // don't use set so graph observer isn't alerted
+        // don't use set so graph observer isn't alerted 
         App.graph.freezeFrameAt = App.graph.get('nextFrame')
 
         App.get('router').send('moveElsewhere', {
@@ -207,15 +207,17 @@
     init: function() {
       this._super();
 
-      this.width =  200
+      this.width =  300
       this.height = 300
-      this.rcx = this.width/2 + 110
-      this.rcy = this.height/2
-      this.radius = 120
+      this.rcx = this.width/2
+      this.rcy = this.height
+      this.radius = 240
       this.numEdges = 0
       this.numVertices = 0
       this.colors = d3.scale.category10().range()
-      this.colors[0] = "#42DCA3"
+      this.colors[0] = "#000000"
+      this.colors[1] = "#42DCA3"
+      this.colors[2] = "#42DCA3"
       this.nodes = [] // the node with index 0 is fixed to the center and has a high charge
       this.links = []
       this.lcfStepsAndRepeats = []
@@ -223,7 +225,7 @@
       this.animationSpeed = 0
       this.freezeFrameAt = 0
       this.currentFrame = 0
-      this.charge = 100
+      this.charge = 50
       this.interval = null
 
       this.force = d3.layout.force().charge(function(d, i) {

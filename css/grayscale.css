@@ -20,6 +20,35 @@ body {
   height: 300px;
   overflow: hidden;
 }
+.sidebarz{
+  text-transform: uppercase;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 4em;
+  text-align: right;
+}
+.sidebary{
+  text-transform: uppercase;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 4em;
+  text-align: left;
+}
+
+.rightcolumn {
+  border: #000;
+  border-left: thick double #42DCA3;
+  font-size: 16px;
+  text-align: left;
+}
+.leftcolumn {
+  border: #000;
+  border-right: thick double #42DCA3;
+  font-size: 16px;
+  text-align: right;
+}
 
 .shadoweddiv {
   background: rgba(255,255,255,0.7);
@@ -244,7 +273,7 @@ a:focus {
 .services-section {
   width: 100%;
   padding: 50px;
-  background-color: #f1f1f1;
+  background-color: white;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -252,9 +281,28 @@ a:focus {
 }
 .about-section {
   width: 100%;
-  padding: 50px;
+  padding-top: 50px;
   color: black;
   background-color: white;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+.carear-management-section{
+ width: 100%;
+  padding: 50px;
+  color: black;
+  background-color: #f1f1f1;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+.leadership-section {
+  width: 100%;
+  padding: 50px;
+  background-color: #f1f1f1;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -310,7 +358,6 @@ ul.banner-social-buttons {
   width: 100%;
   padding: 50px 0;
   color: black;
-  background: url(../img/people-office-group-team.jpg) no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
