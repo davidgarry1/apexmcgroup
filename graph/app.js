@@ -119,7 +119,7 @@
           App.graph.set('freezeFrameAt', App.graph.get('prevFrame'))
       },
       nextFrame: function() {
-        // don't use set so graph observer isn't alerted 
+        // don't use set so graph observer isn't alerted
         App.graph.freezeFrameAt = App.graph.get('nextFrame')
 
         App.get('router').send('moveElsewhere', {
@@ -211,14 +211,15 @@
     init: function() {
       this._super();
 
-      this.width =  $(window).width()
-      this.height = $(window).height()
+      this.width =  200
+      this.height = 300
       this.rcx = this.width/2 + 110
       this.rcy = this.height/2
-      this.radius = 240
+      this.radius = 120
       this.numEdges = 0
       this.numVertices = 0
       this.colors = d3.scale.category10().range()
+      this.colors[0] = 42DCA3
       this.nodes = [] // the node with index 0 is fixed to the center and has a high charge
       this.links = []
       this.lcfStepsAndRepeats = []
@@ -314,7 +315,7 @@
         this.svg.selectAll(".vertex").style("fill", this.colors[0])
         var nodes = this.nodes.slice(1)
         lcfEdges.forEach(function(edge, i) {
-          graph.links.push({source: nodes[edge.source], target: nodes[edge.target]}); 
+          graph.links.push({source: nodes[edge.source], target: nodes[edge.target]});
         });
         this.drawLines()
         this.force.links(this.links)
