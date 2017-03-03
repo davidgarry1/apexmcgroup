@@ -13,6 +13,11 @@ body {
 .margined {
   margin: 10px;
 }
+
+.bordered {
+  border: 2px solid #42DCA3;
+}
+
 .shadowed {
   text-shadow: 0px 0px 1.1em rgba(255,255,255, .3);
 }
@@ -127,7 +132,7 @@ a:focus {
   transition: background 0.3s ease-in-out;
 }
 .navbar-custom .nav li a:hover {
-  color: rgba(66,220,163, 0.9);
+  color: white;
   outline: none;
   background-color: transparent;
 }
@@ -157,13 +162,11 @@ a:focus {
   }
   .navbar-custom.top-nav-collapse {
     padding: 0;
-    background: #1d9b6c;
+    background: #42DCA3;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
 }
-.vin {
-  box-shadow: 0 0 200px rgba(255,255,255,0.5) inset;
-}
+
 .intro {
   display: table;
   width: 100%;
@@ -270,16 +273,16 @@ a:focus {
 .content-section {
   padding: 50px;
 }
-.services-section {
+.odd {
   width: 100%;
   padding: 50px;
-  background-color: white;
+  background-color: #f1f1f1;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
 }
-.about-section {
+.even {
   width: 100%;
   padding-top: 50px;
   color: black;
@@ -289,25 +292,7 @@ a:focus {
   background-size: cover;
   -o-background-size: cover;
 }
-.carear-management-section{
- width: 100%;
-  padding: 50px;
-  color: black;
-  background-color: #f1f1f1;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-}
-.leadership-section {
-  width: 100%;
-  padding: 50px;
-  background-color: #f1f1f1;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-}
+
 
 @media (min-width: 767px) {
   .content-section {
@@ -366,7 +351,7 @@ ul.banner-social-buttons {
 footer {
   padding: 0px 0;
   color: white;
-  background-color: #1d9b6c;
+  background-color: #42DCA3;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -382,7 +367,7 @@ footer a {
     transition: all 0.2s ease-in-out;
 }
 footer a:hover {
-    color: #42DCA3;
+    color: white;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
@@ -405,4 +390,45 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
+}
+
+table {
+  table-layout: fixed;
+}
+
+table th {
+  text-align: center;
+  font-size: 2em;
+  font-style: bold;
+  background-color: #42DCA3;
+}
+
+table tbody {
+  text-align: center;
+  background-color: #42DCA3;
+}
+
+table td {
+  padding: 10px;
+  width: 30%;
+}
+
+
+
+path {
+  fill-rule: evenodd;
+  stroke: white;
+  stroke-width: 2px;
+}
+
+.sun path {
+  fill: #1d9b6c;
+}
+
+.planet path {
+  fill: #42DCA3;
+}
+
+.annulus path {
+  fill: #1d9b6c;
 }

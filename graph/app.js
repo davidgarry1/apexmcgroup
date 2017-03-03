@@ -115,7 +115,7 @@
           App.graph.set('freezeFrameAt', App.graph.get('prevFrame'))
       },
       nextFrame: function() {
-        // don't use set so graph observer isn't alerted 
+        // don't use set so graph observer isn't alerted
         App.graph.freezeFrameAt = App.graph.get('nextFrame')
 
         App.get('router').send('moveElsewhere', {
