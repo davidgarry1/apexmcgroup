@@ -11,7 +11,7 @@ var offset = 0,
     speed = 3,
     start = Date.now();
 
-var svg = d3.select("#gear-div").append("svg")
+var svg = d3.select(".gear-div").append("svg")
     .attr("width", width)
     .attr("height", height)
   .append("g")
