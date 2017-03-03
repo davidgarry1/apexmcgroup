@@ -190,6 +190,7 @@ a:focus {
   -o-background-size: cover;
 }
 .intro .intro-body {
+  padding-top: 90px;
   display: table-cell;
   vertical-align: middle;
 }
