@@ -3,6 +3,82 @@
 * Copyright 2013-2016 Start Bootstrap
 * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
 */
+
+/* Style the tab */
+
+.bimg {
+  width: 50%;
+  vertical-align: center;
+  text-align: center;
+}
+
+
+div.tabbeddiv {
+    overflow: hidden;
+    border: 2px solid black;
+    border-bottom: none;
+    background-color: #42DCA3;
+}
+
+/* Style the links inside the tab */
+div.tabbeddiv a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+    font-size: 1.8em;
+  font-style: bold;
+  background-color: #42DCA3;
+}
+
+/* Change background color of links on hover */
+div.tabbeddiv a:hover {
+    background-color: #1d9b6c;
+}
+
+/* Create an active/current tablink class */
+div.tabbeddiv .active {
+   color: #42DCA3;
+   background-color: #000;
+}
+
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 2px solid black;
+    border-top: none;
+    background-color: #42DCA3;
+}
+
+.method td {
+  text-align: center;
+  font-size: 1.3em;
+  font-style: bold;
+  background-color: #42DCA3;
+  padding: 10px;
+}
+
+.method tbody {
+  text-align: center;
+}
+
+.method th {
+  text-align: center;
+  padding: 20px;
+  width: 30%;
+
+}
+
+
+
+
+
 body {
   width: 100%;
   height: 100%;
@@ -10,6 +86,13 @@ body {
   color: black;
   background-color: white;
 }
+
+.aboutimg {
+  width: 80%;
+  vertical-align: center;
+  text-align: center;
+}
+
 .margined {
   margin: 10px;
 }
@@ -400,26 +483,8 @@ body {
   webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
 }
 
-.method {
-  table-layout: fixed;
-}
 
-.method th {
-  text-align: center;
-  font-size: 2em;
-  font-style: bold;
-  background-color: #42DCA3;
-}
 
-.method tbody {
-  text-align: center;
-  background-color: #42DCA3;
-}
-
-.method td {
-  padding: 10px;
-  width: 30%;
-}
 
 .about {
   table-layout: fixed;
