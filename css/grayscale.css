@@ -204,9 +204,6 @@ body {
     filter: grayscale(0%) contrast(100%) drop-shadow(1px 1px 2px #000);
 }
 
-.shadowed {
-  text-shadow: 0px 0px 1.1vw rgba(255,255,255, .3);
-}
 #chart {
   height: 300px;
   overflow: hidden;
@@ -249,10 +246,6 @@ body {
   border-right: thick double #42DCA3;
   font-size: 1.3vw;
   text-align: right;
-}
-
-.shadoweddiv {
-  background: rgba(255,255,255,0.7);
 }
 
 html {
@@ -359,7 +352,7 @@ a:focus {
   .navbar-custom.top-nav-collapse {
     padding: 0;
     background: #42DCA3;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 2px solid rgba(0,0,0, 0.8);
   }
 }
 
@@ -370,7 +363,7 @@ a:focus {
   padding: 80px 0;
   text-align: center;
   color: black;
-  background: url(https://raw.githubusercontent.com/davidgarry1/Photography/master/imgs/EX4.jpg) no-repeat bottom center scroll;
+  background: url("background.jpg") no-repeat bottom center scroll;
   /*background: url(../img/la.jpg) no-repeat bottom center scroll;*/
   background-color: black;
   -webkit-background-size: cover;
