@@ -37,6 +37,11 @@
   text-align: center;
 }
 
+.sideimg {
+  width: 100%;
+  max-width: 300px;
+}
+
 
 div.tabbeddiv {
     overflow: hidden;
@@ -133,7 +138,28 @@ body {
   border: 2px solid #42DCA3;
 }
 
+
 .whiteboxed {
+  border: 2px solid #42DCA3;
+  background-color: #42DCA3;
+  margin: 10px;
+  padding: 10px;
+}
+
+
+.whiteboxedleft {
+  width: 45%; 
+  float:left;
+  border: 2px solid #42DCA3;
+  background-color: #42DCA3;
+  margin: 10px;
+  padding: 10px;
+}
+
+
+.whiteboxedright {
+  width: 45%; 
+  float:right;
   border: 2px solid #42DCA3;
   background-color: #42DCA3;
   margin: 10px;
@@ -162,6 +188,16 @@ body {
   letter-spacing: 1px;
   font-size: 4vw;
   text-align: left;
+}
+
+.minicontact {
+  text-transform: uppercase;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  letter-spacing: 1px;
+  font-size: 1vw;
+  text-align: left;
+  padding-top: 30px;
 }
 
 .rightcolumn {
@@ -419,8 +455,8 @@ a:focus {
 
 @media (min-width: 767px) {
   .content-section {
-    padding-top: 50px;
-    padding:50px;
+    padding-top: 100px;
+    padding:100px;
   }
 }
 .btn {
