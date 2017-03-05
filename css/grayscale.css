@@ -643,3 +643,20 @@ path {
 .annulus path {
   fill: #1d9b6c;
 }
+
+
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('https://github.com/davidgarry1/synergizergroup/blob/master/img/default.gif?raw=true') no-repeat center center #000; 
+   /* -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;*/
+}

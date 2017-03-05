@@ -19,6 +19,11 @@ function collapseNavbar() {
 
 $(window).scroll(collapseNavbar);
 $(document).ready(collapseNavbar);
+$(window).load(function() {
+        // Animate loader off screen
+        $("body").removeClass("preload");
+        $(".se-pre-con").fadeOut("fast");
+    });
 // Closes the Responsive Menu on Menu Item Click
 
 
@@ -38,5 +43,5 @@ $('.navbar-collapse ul li a').click(
     function() { 
         $(this).closest('.collapse').collapse('toggle'); 
     }
-);}
+);
 
