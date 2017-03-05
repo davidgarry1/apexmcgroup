@@ -1,6 +1,3 @@
-
-
-
 var width = 220,
     height = 220,
     radius = 35,
