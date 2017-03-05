@@ -366,7 +366,7 @@ a:focus {
 .intro {
   display: table;
   width: 100%;
-  height: auto;
+  height: 100%;
   padding: 80px 0;
   text-align: center;
   color: black;
@@ -382,13 +382,27 @@ a:focus {
   padding-top: 90px;
   display: table-cell;
   vertical-align: middle;
+
+
 }
 .intro .intro-body .brand-heading {
   font-size: 3vw;
+  -webkit-filter: grayscale(0%) contrast(100%) drop-shadow(2px 2px 10px #FFF);
+    filter: grayscale(0%) contrast(100%) drop-shadow(2px 2px 10px #FFF);
+
 }
 .intro .intro-body .intro-text {
   font-size: 2.2vw;
+  -webkit-filter: grayscale(0%) contrast(100%) drop-shadow(2px 2px 10px #FFF);
+    filter: grayscale(0%) contrast(100%) drop-shadow(2px 2px 10px #FFF);
 }
+
+.intro .intro-body .introsmall {
+  font-size: 1.5vw;
+  -webkit-filter: grayscale(0%) contrast(100%) drop-shadow(2px 2px 10px #FFF);
+    filter: grayscale(0%) contrast(100%) drop-shadow(2px 2px 10px #FFF);
+}
+
 @media (min-width: 768px) {
   .intro {
     height: 100%;
@@ -399,6 +413,7 @@ a:focus {
   }
   .intro .intro-body .intro-text {
     font-size: 3vw;
+
   }
 }
 
