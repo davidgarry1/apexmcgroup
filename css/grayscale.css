@@ -363,7 +363,7 @@ a:focus {
   padding: 80px 0;
   text-align: center;
   color: black;
-  background: url("background.jpg") no-repeat bottom center scroll;
+  background: url(https://github.com/davidgarry1/synergizergroup/blob/master/img/background.jpg?raw=true) no-repeat bottom center scroll;
   /*background: url(../img/la.jpg) no-repeat bottom center scroll;*/
   background-color: black;
   -webkit-background-size: cover;
