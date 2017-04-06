@@ -40,8 +40,40 @@ $(function() {
 
 
 $('.navbar-collapse ul li a').click(
-    function() { 
-        $(this).closest('.collapse').collapse('toggle'); 
+    function() {
+        $(this).closest('.collapse').collapse('toggle');
     }
 );
 
+
+var status = "less";
+  document.getElementById("textArea").style.display="none";
+function toggleText()
+{
+    if (status == "less") {
+        document.getElementById("textArea").style.display="block";
+        document.getElementById("toggleButton").innerText = "Less";
+        status = "more";
+    } else if (status == "more") {
+        document.getElementById("textArea").style.display="none";
+        document.getElementById("toggleButton").innerText = "More";
+        status = "less"
+    }
+}
+
+
+
+var status2 = "less";
+  document.getElementById("textArea2").style.display="none";
+function toggleText2()
+{
+    if (status2 == "less") {
+        document.getElementById("textArea2").style.display="block";
+        document.getElementById("toggleButton2").innerText = "Less";
+        status2 = "more";
+    } else if (status2 == "more") {
+        document.getElementById("textArea2").style.display="none";
+        document.getElementById("toggleButton2").innerText = "More";
+        status2 = "less"
+    }
+}
