@@ -222,6 +222,7 @@ body {
   border: 2px solid #42DCA3;
   background-color: #42DCA3;
   margin: 10px;
+  text-align: left;
   padding: 10px;
     -webkit-filter: grayscale(0%) contrast(100%) drop-shadow(1px 1px 2px #000);;
     filter: grayscale(0%) contrast(100%) drop-shadow(1px 1px 2px #000);
@@ -243,6 +244,7 @@ body {
 .whiteboxedleft {
   width: 45%;
   float:left;
+  text-align: left;
   border: 2px solid #42DCA3;
   background-color: #42DCA3;
   margin: 10px;
@@ -257,6 +259,7 @@ body {
   background-color: #42DCA3;
   margin: 10px;
   padding: 10px;
+  text-align: left;
     -webkit-filter: grayscale(0%) contrast(100%) drop-shadow(1px 1px 2px #000);;
     filter: grayscale(0%) contrast(100%) drop-shadow(1px 1px 2px #000);
 }
@@ -265,6 +268,7 @@ body {
 .whiteboxedright {
   width: 45%;
   float:right;
+  text-align: left;
   border: 2px solid #42DCA3;
   background-color: #42DCA3;
   margin: 10px;
@@ -278,11 +282,7 @@ body {
   overflow: hidden;
 }
 
-@media(max-width: 950px){
-  .sidebarz, .sidebary {
-    display: none;
-  }
-}
+
 .sidebarz{
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -312,18 +312,53 @@ body {
   padding-top: 30px;
 }
 
-.rightcolumn {
-  border: #000;
-  border-left: thick double #42DCA3;
-  font-size: 1.3em;
-  text-align: left;
+@media(max-width: 950px){
+  .sidebarz, .sidebary {
+    display: none;
+  }
 }
-.leftcolumn {
-  border: #000;
-  border-right: thick double #42DCA3;
-  font-size: 1.3em;
-  text-align: right;
+
+@media(min-width: 950px){
+  .rightcolumn {
+    border: #000;
+    border-left: thick double #42DCA3;
+    font-size: 1.3em;
+    text-align: left;
+  }
+  .leftcolumn {
+    border: #000;
+    border-right: thick double #42DCA3;
+    font-size: 1.3em;
+    text-align: right;
+  }
+  .contactform {
+    width:100%;
+    padding-left:30%;
+    display: table;
+    text-align:right;
+  }
 }
+
+@media(max-width: 950px){
+  .rightcolumn {
+    border: #000;
+    font-size: 1.3em;
+    text-align: center;
+  }
+  .leftcolumn {
+    border: #000;
+    font-size: 1.3em;
+    text-align: center;
+  }
+  .contactform {
+    width:100%;
+    padding: 10%;
+    display: table;
+    text-align: center;
+  }
+}
+
+
 
 html {
   width: 100%;
