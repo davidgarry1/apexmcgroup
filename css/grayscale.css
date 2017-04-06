@@ -25,6 +25,8 @@
 
 .sideimg {
   display: none;
+  margin: 10px;
+  padding: 10px;
 }
 
 @media(min-width:950px) {
@@ -199,10 +201,32 @@ body {
     filter: grayscale(0%) contrast(100%) drop-shadow(1px 1px 2px #000);
 }
 
+@media (min-width: 950px) {
+  .whiteboxedmobile {
+    display: none;
+  }
+}
+
+@media (max-width: 950px) {
+  .together {
+    display: none;
+  }
+}
+
 
 .whiteboxedleft {
   width: 45%;
   float:left;
+  border: 2px solid #42DCA3;
+  background-color: #42DCA3;
+  margin: 10px;
+  padding: 10px;
+    -webkit-filter: grayscale(0%) contrast(100%) drop-shadow(1px 1px 2px #000);;
+    filter: grayscale(0%) contrast(100%) drop-shadow(1px 1px 2px #000);
+}
+
+.whiteboxedmobile {
+  width: 90%;
   border: 2px solid #42DCA3;
   background-color: #42DCA3;
   margin: 10px;
@@ -234,6 +258,7 @@ body {
   letter-spacing: 1px;
   font-size: 4vw;
   text-align: right;
+  padding: 10px;
 }
 .sidebary{
   text-transform: uppercase;
@@ -242,6 +267,7 @@ body {
   letter-spacing: 1px;
   font-size: 4vw;
   text-align: left;
+  padding: 10px;
 }
 
 .minicontact {
