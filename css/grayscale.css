@@ -277,6 +277,12 @@ body {
   height: 300px;
   overflow: hidden;
 }
+
+@media(max-width: 950px){
+  .sidebarz, .sidebary {
+    display: none;
+  }
+}
 .sidebarz{
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
