@@ -77,3 +77,18 @@ function toggleText2()
         status2 = "less"
     }
 }
+
+var status3 = "less";
+  document.getElementById("textArea3").style.display="none";
+function toggleText3()
+{
+    if (status3 == "less") {
+        document.getElementById("textArea3").style.display="block";
+        document.getElementById("toggleButton3").innerText = "Less";
+        status3 = "more";
+    } else if (status3 == "more") {
+        document.getElementById("textArea3").style.display="none";
+        document.getElementById("toggleButton3").innerText = "More";
+        status3 = "less"
+    }
+}
