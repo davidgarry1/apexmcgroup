@@ -106,6 +106,16 @@ img {
     filter: grayscale(0%) contrast(100%) drop-shadow(1px 1px 2px #000);
 }
 
+.form-control::-moz-placeholder {
+  color: #2B2B2B;
+}
+.form-control:-ms-input-placeholder {
+  color: #2B2B2B;
+}
+.form-control::-webkit-input-placeholder {
+  color: #2B2B2B;
+}
+
 .sideimg {
   width: 100%;
   max-width: 300px;
@@ -117,6 +127,7 @@ img {
 .sideimgsm {
   width: 66%;
   max-width: 200px;
+  float: right;
   -webkit-filter: grayscale(0%) contrast(100%) drop-shadow(2px 2px 5px #000);
   filter: grayscale(0%) contrast(100%) drop-shadow(2px 2px 5px #000);
 
