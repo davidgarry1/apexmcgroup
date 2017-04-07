@@ -92,6 +92,10 @@
 
 }
 
+.bigger {
+  font-size: 1.4em;
+}
+
 img {
   -webkit-filter: grayscale(0%) contrast(100%) drop-shadow(1px 1px 1px #000);
     filter: grayscale(0%) contrast(100%) drop-shadow(1px 1px 1px #000);
