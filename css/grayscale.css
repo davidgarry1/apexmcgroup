@@ -192,7 +192,7 @@ div.tabbeddiv .active:hover {
   text-align: center;
   padding: 0px;
   width: 30%;
-  height: 410px;
+  height: 470px;
 }
 
 body {
@@ -223,6 +223,16 @@ body {
   background-color: #42DCA3;
   margin: 10px;
   text-align: left;
+  padding: 10px;
+    -webkit-filter: grayscale(0%) contrast(100%) drop-shadow(1px 1px 2px #000);;
+    filter: grayscale(0%) contrast(100%) drop-shadow(1px 1px 2px #000);
+}
+
+.whiteboxedcenter {
+  border: 2px solid #42DCA3;
+  background-color: #42DCA3;
+  margin: 10px;
+  text-align: center;
   padding: 10px;
     -webkit-filter: grayscale(0%) contrast(100%) drop-shadow(1px 1px 2px #000);;
     filter: grayscale(0%) contrast(100%) drop-shadow(1px 1px 2px #000);

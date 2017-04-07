@@ -92,3 +92,19 @@ function toggleText3()
         status3 = "less"
     }
 }
+
+
+var status4 = "less";
+  document.getElementById("textArea4").style.display="none";
+function toggleText4()
+{
+    if (status4 == "less") {
+        document.getElementById("textArea4").style.display="block";
+        document.getElementById("toggleButton4").innerText = "Less";
+        status4 = "more";
+    } else if (status4 == "more") {
+        document.getElementById("textArea4").style.display="none";
+        document.getElementById("toggleButton4").innerText = "More";
+        status4 = "less"
+    }
+}
