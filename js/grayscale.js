@@ -46,6 +46,39 @@ $('.navbar-collapse ul li a').click(
 );
 
 
+function g1()
+{
+  document.getElementById("aboutcontent").style.display="block";
+  document.getElementById("g1").style.display="block";
+}
+
+function g2()
+{
+  document.getElementById("aboutcontent").style.display="block";
+  document.getElementById("g2").style.display="block";
+}
+
+function g3()
+{
+  document.getElementById("aboutcontent").style.display="block";
+  document.getElementById("g3").style.display="block";
+}
+
+function g4()
+{
+  document.getElementById("aboutcontent").style.display="block";
+  document.getElementById("g4").style.display="block";
+}
+
+function g5()
+{
+  document.getElementById("aboutcontent").style.display="block";
+  document.getElementById("g5").style.display="block";
+}
+
+
+
+
 var status = "less";
   document.getElementById("textArea").style.display="none";
 function toggleText()

@@ -663,6 +663,21 @@ a:focus {
     padding:100px;
   }
 }
+#sitelink {
+  font-weight: bold;
+  text-align: center;
+  font-size: 0.8em;
+  color: black;
+}
+#sitelink a {
+  color: black;
+}
+#sitelink a:hover {
+  color: #42DCA3;
+}
+#aboutcontent,#g1,#g2,#g3,#g4,#g5{
+  display: none;
+}
 .btn {
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -677,7 +692,7 @@ a:focus {
   color: black;
   background-color: #42DCA3;
 }
-.btn-default:hover,
+.default:hover,
 .btn-default:focus {
   border: 1px solid black;
   outline: none;
