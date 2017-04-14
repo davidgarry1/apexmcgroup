@@ -6,6 +6,8 @@
 
 /* Style the tab */
 
+body, html { overflow-x:hidden; }
+
 
 .text-content {
   background-color: #42DCA3;
