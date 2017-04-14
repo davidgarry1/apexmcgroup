@@ -133,6 +133,15 @@ img {
 
 }
 
+.sideimgsmcc {
+  width: 66%;
+  max-width: 200px;
+  float: center;
+  -webkit-filter: grayscale(0%) contrast(100%) drop-shadow(2px 2px 5px #000);
+  filter: grayscale(0%) contrast(100%) drop-shadow(2px 2px 5px #000);
+
+}
+
 div.tabbeddiv {
     overflow: hidden;
     border: 2px solid black;
@@ -328,6 +337,16 @@ body {
   font-size: 1vw;
   text-align: left;
   padding-top: 30px;
+}
+
+.mobilecontact {
+  text-transform: uppercase;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  letter-spacing: 1px;
+  font-size: 1.2em;
+  text-align: center;
+  padding-top: 10px;
 }
 
 @media(max-width: 950px){
